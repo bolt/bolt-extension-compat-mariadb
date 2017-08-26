@@ -1,0 +1,27 @@
+{
+    "name": "bolt/compat-mariadb",
+    "description": "Temporary hot-fix for MariaDB 10.2 only",
+    "type": "bolt-extension",
+    "keywords": [
+        "DBAL",
+        "MariaDB"
+    ],
+    "require": {
+        "bolt/bolt": "^3.3"
+    },
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Gawain Lynch",
+            "email": "gawain.lynch@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\Compat\\MariaDb\\": "src"
+        }
+    },
+    "extra": {
+        "bolt-class": "Bolt\\Extension\\Compat\\MariaDb\\MariaDbCompatExtension"
+    }
+}
